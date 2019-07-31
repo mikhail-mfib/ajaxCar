@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: rgb(247, 247, 247);
+        }
+
+        .container {
+            display: flex;
+            -webkit-flex-flow: row wrap; 
+            flex-flow: row wrap; 
+            justify-content: center; 
+            margin-bottom: 15px;
+        }
+
+        .car-thumbnail {
+            background: white;
+            max-width: 400px;
+            margin: 5px 25px 20px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px 10px;
+            box-shadow: 0 0 4px 1px rgba(133, 133, 133, 0.3);
+            transition: all 0.3s;
+        }
+
+        .car-thumbnail:hover {
+            box-shadow: 0 0 2px 1px rgba(240, 128, 128, 0.9);
+        }
+
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4 {
+            margin: 0;
+            text-align: right;
+            font-weight: 300;
+            color: coral;
+        }
+
+        p {
+            max-width: 300px;
+            min-height: 150px;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: 300;
+            font-size: 2rem;
+            margin: 15px auto 35px;
+            position: relative;
+        }
+
+        h3::after {
+            content: "";
+            position: absolute;
+            left: 36%;
+            bottom: -10px;
+            height: 1px;
+            width: 30%; 
+            border-bottom: 1px solid lightcoral;
+        }
+
+        .btn-row {
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 35px;
+        }
+        a {
+            color: lightcoral;
+            text-decoration: none;
+            padding: 5px;
+            border: 1px solid lightcoral;
+            border-radius: 4px;
+            width: 85px;
+            text-align: center;
+            margin-right: 5px;
+            float: left;
+            font-size: 20px;
+            transition: all 0.5s;
+            text-transform: capitalize;
+        }
+        a:hover {
+            background: lightcoral;
+            color: white;
+        }
+
+        .active {
+            background: lightcoral;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-row">
+        <a href="#" class='active'>all</a>
+        <a href="#">germany</a>
+        <a href="#">italian</a>
+        <a href="#">france</a>
+    </div>
+    <div class="container"></div>
+<script src="script.js"></script>
+</body>
+
+</html>
